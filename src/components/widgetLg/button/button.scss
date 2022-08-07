@@ -1,0 +1,20 @@
+.buttonWidgetLg {
+  padding: 5px 7px;
+  border: none;
+  border-radius: 10px;
+
+  &.Approved {
+    color: #319b67;
+    background-color: #85f1c8;
+  }
+
+  &.Declined {
+    color: #bb202b;
+    background-color: #ff6771;
+  }
+
+  &.Pending {
+    color: #183574;
+    background-color: #5f92ff;
+  }
+}

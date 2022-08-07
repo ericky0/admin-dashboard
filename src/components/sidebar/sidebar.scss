@@ -1,0 +1,43 @@
+.sidebarComponent {
+  flex: 1;
+  height: calc(100vh - 50px);
+  background-color: rgb(240, 240, 240);
+  position: sticky;
+  top: 50px;
+
+  .wrapper {
+    padding: 20px;
+    color: #555;
+
+    .menu {
+      margin-bottom: 10px;
+
+      h3 {
+        font-size: 13px;
+        color: rgb(184, 184, 184)
+      }
+
+      ul {
+        list-style: none;
+        padding: 5px;
+
+        li {
+          padding: 5px;
+          cursor: pointer;
+          display: flex;
+          border-radius: 10px;
+          gap: 5px;
+          transition: 0.1s ease-in-out;
+
+          .icon {
+            font-size: 20px;
+          }
+          
+          &.active, &:hover {
+            background-color: rgb(228, 228, 228);
+          }
+        }
+      }
+    }
+  }
+}
