@@ -13,6 +13,7 @@ import {
   ChatBubbleOutline,
   WorkOutline,
   Report } from '@mui/icons-material'
+import { Link } from 'react-router-dom'
 
 const Sidebar = () => {
   return (
@@ -38,14 +39,18 @@ const Sidebar = () => {
         <div className="menu">
           <h3>Quick Menu</h3>
           <ul>
-            <li>
-              <PermIdentity className='icon'/>
-              Users
-            </li>
-            <li>
-              <Storefront className='icon' />
-              Products
-            </li>
+            <Link to='/users' className='link'>
+              <li>
+                <PermIdentity className='icon'/>
+                Users
+              </li>
+            </Link>
+            <Link to='/products' className='link'>
+              <li>
+                <Storefront className='icon' />
+                Products
+              </li>
+            </Link>
             <li>
               <AttachMoney className='icon' />
               Transactions

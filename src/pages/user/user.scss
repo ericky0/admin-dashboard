@@ -1,0 +1,167 @@
+.userPage {
+  flex: 4;
+  padding: 20px;
+
+  .titleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    button{
+      width: 80px;
+      border: none;
+      padding: 5px;
+      background-color: teal;
+      border-radius: 5px;
+      cursor: pointer;
+      color: white;
+      font-size: 16px;
+    }
+  }
+
+  .userContainer {
+    display: flex;
+    margin-top: 20px;
+
+    .show {
+      flex: 1;
+      padding: 20px;
+      -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75); 
+      box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+
+      .top {
+        display: flex;
+        align-items: center;
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+
+        .title {
+          display: flex;
+          flex-direction: column;
+          margin-left: 20px;
+
+          span.username {
+            font-weight: 600;
+          }
+
+          span.userTitle {
+            font-weight: 300;
+          }
+        }
+      }
+
+      .bottom {
+        margin-top: 20px;
+
+        span.title {
+          font-size: 14px;
+          font-weight: 600;
+          color: rgb(177, 177, 177);
+        }
+        .info {
+          display: flex;
+          align-items: center;
+          margin: 20px 0px;
+          color: #444;
+
+          .icon {
+            font-size: 20px;
+          }
+          .infoTitle {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+
+    .update {
+      flex: 2;
+      padding: 20px;
+      -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75); 
+      box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+      margin-left: 20px;
+
+      span.title {
+        font-size: 24px;
+        font-weight: 600;
+      }
+
+      form {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+       .left {
+
+        .updateItem {
+          display: flex;
+          flex-direction: column;
+          margin-top: 10px;
+          label {
+            margin-bottom: 5px;
+            font-size: 14px;
+          }
+          input[type='text'] {
+            border: none;
+            width: 250px;
+            height: 30px;
+            border-bottom: 1px solid gray;
+
+            &:focus {
+              outline: 0;
+            }
+          }
+        }
+       } 
+
+       .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .upload {
+          label {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img {
+              width: 100px;
+              height: 100px;
+              border-radius: 10px;
+              object-fit: cover;
+              margin-right: 20px;
+              cursor: pointer;
+            }
+            .publish {
+              color: rgb(0, 149, 194);
+              font-size: 40px;
+              cursor: pointer;
+              margin: 5px 10px 0 0;
+              transition: 0.15s ease-in;
+              
+              &:hover {
+                color: rgb(0, 116, 151);
+              }
+
+            }
+          }
+        }
+
+        button {
+          border-radius: 5px;
+          border: none;
+          padding: 5px;
+          cursor: pointer;
+          background-color: rgb(3, 168, 127);
+          color: white;
+          font-weight: 600;
+        }
+       }
+      }
+    }
+  }
+}
