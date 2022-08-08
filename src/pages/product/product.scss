@@ -1,0 +1,158 @@
+.productPage {
+  flex: 4;
+  padding: 20px;
+
+  .titleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    button {
+      width: 80px;
+      border: none;
+      padding: 5px;
+      background-color: teal;
+      color: white;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+  }
+
+  .top {
+    display: flex;
+    .topLeft {
+      flex: 1.5;
+    }
+
+    .topRight {
+      flex: 1;
+      padding: 20px;
+      margin: 20px;
+      -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75); 
+      box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+      .topInfo {
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          object-fit: cover;
+          margin-right: 20px;
+        }
+
+        span {
+          font-weight: 600;
+        }
+      }
+
+      .bottomInfo {
+        margin-top: 10px;
+
+        .infoItem {
+          width: 150px;
+          display: flex;
+          justify-content: space-between;
+          .key {
+            font-weight: 600;
+          }
+
+          .value {
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+
+  .bottom {
+    flex: 1;
+    padding: 20px;
+    margin: 20px;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75); 
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+
+    form {
+      display: flex;
+      justify-content: space-between;
+      .left {
+        display: flex;
+        flex-direction: column;
+        label {
+          margin-bottom: 10px;
+          color: gray;
+        }
+
+        input[type='text'] {
+          margin-bottom: 10px;
+          border: none;
+          padding: 5px;
+          border-bottom: 1px solid gray;
+
+          &:focus {
+            outline: 0;
+          }
+        }
+
+        select {
+          margin-bottom: 10px;
+        }
+      }
+
+      .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .upload {
+          label {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            img {
+              width: 100px;
+              height: 100px;
+              border-radius: 10px;
+              object-fit: cover;
+              margin-right: 20px;
+              cursor: pointer;
+            }
+
+            .publish {
+              color: rgb(0, 149, 194);
+              font-size: 35px;
+              cursor: pointer;
+              margin: 5px 10px 0 0;
+              transition: 0.15s ease-in;
+              
+              &:hover {
+                color: rgb(0, 116, 151);
+              }
+
+            }
+          }
+        }
+      }
+    }
+
+    .buttonWrapper {
+      width: 100%;
+      text-align: center;
+      button {
+        border: none;
+        padding: 5px;
+        border-radius: 5px;
+        background-color: rgb(3, 168, 127);
+        font-weight: 600;
+        color: white;
+        cursor: pointer;
+        text-align: center;
+        // width: 20%;
+        min-width: 90px;
+        height: 30px;
+      }
+    }
+  }
+}

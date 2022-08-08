@@ -6,10 +6,11 @@ interface ChartType {
   title: string;
   data: {
     name: string;
-    'Active User': number;
+    'Active User'?: number;
+    'Sales'?: number;
   }[]
   dataKey: string;
-  grid: boolean;
+  grid?: boolean;
 }
 
 const Chart = ({title, data, dataKey, grid}: ChartType) => {
