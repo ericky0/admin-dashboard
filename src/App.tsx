@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Sidebar from './components/sidebar/Sidebar';
 import Topbar from './components/topbar/Topbar';
 import Home from './pages/home/Home';
+import NewProduct from './pages/newProduct/NewProduct';
 import NewUser from './pages/newUser/NewUser';
 import Product from './pages/product/Product';
 import ProductList from './pages/productList/ProductList';
@@ -20,7 +21,7 @@ function App() {
             {/* users */}
             <Route path='/users' element={<UserList />} />
             <Route path='/user/:userId' element={<User />} />
-            <Route path='/newUser' element={<NewUser />} />
+            <Route path='/newProduct' element={<NewProduct />} />
             {/* end-users */}
 
             {/* products */}
